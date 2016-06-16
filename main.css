@@ -18,6 +18,12 @@
 *     Base
 ------------------------------*/
 
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 
 /*------------------------------
 *     Hero
@@ -26,9 +32,11 @@
 .hero {
   background-color: #3f51b5;
   color: #fff;
+  margin-bottom: 40px;
   padding: 20px;
   text-align: center;
 }
+
 
 /*------------------------------
 *     Logo
@@ -38,4 +46,30 @@
   font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+
+/*------------------------------
+*     News
+------------------------------*/
+
+.news-item {
+  border-bottom: 1px solid #b6b6b6;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.news-link {
+  color: #3f51b5;
+  font-size: 24px;
+}
+
+
+/*------------------------------
+*     Container
+------------------------------*/
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
 }

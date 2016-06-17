@@ -25,8 +25,7 @@ body {
   line-height: 1.5;
 }
 
-a,
-a:visited {
+a {
   color: #ff4081;
 }
 
@@ -98,4 +97,43 @@ ul {
 .container {
   margin: 0 auto;
   max-width: 800px;
+}
+
+
+/*------------------------------
+*    States
+------------------------------*/
+
+.is-liked {
+  -webkit-animation: flash 2s;
+  animation: flash 2s;
+}
+
+
+/*------------------------------
+*     Animation
+------------------------------*/
+
+@-webkit-keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
 }
